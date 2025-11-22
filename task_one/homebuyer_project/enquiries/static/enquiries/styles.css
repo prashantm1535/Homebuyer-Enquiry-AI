@@ -1,0 +1,160 @@
+/* Reset & Body */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+/* Card Layout */
+.card {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form select:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+form label {
+    font-weight: 500;
+}
+
+/* Checkbox */
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+/* Buttons */
+button {
+    background: #667eea;
+    color: #fff;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+}
+
+/* Prediction Result */
+.result-box {
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.result-box.interested {
+    background: #e0f7e9;
+    color: #28a745;
+    border-left: 6px solid #28a745;
+}
+
+.result-box.not-interested {
+    background: #fdecea;
+    color: #dc3545;
+    border-left: 6px solid #dc3545;
+}
+
+/* Insights list */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px 0;
+    color: #888;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    main {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+
+    nav a {
+        display: block;
+        margin: 6px 0;
+    }
+}

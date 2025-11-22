@@ -1,0 +1,14 @@
+{% extends 'enquiries/base.html' %}
+{% block content %}
+  <h2>Dataset Insights</h2>
+  <p>Total: {{ funnel.total }}</p>
+  <p>Interested: {{ funnel.interested }}</p>
+  <p>Conversion rate: {{ funnel.conversion_rate }}%</p>
+
+  <h3>Top Cities</h3>
+  <ul>
+  {% for city, count in top_cities.items %}
+    <li>{{ city }}: {{ count }}</li>
+  {% endfor %}
+  </ul>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'enquiries/base.html' %}
+{% block content %}
+<div class="card">
+    <h2>Predict Enquiry Interest</h2>
+    {% if error %}
+        <p style="color:red">{{ error }}</p>
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if result %}
+    <div class="result-box {% if result == 'Interested' %}interested{% else %}not-interested{% endif %}">
+        <h3>{{ result }}</h3>
+        <p>Name: {{ form.cleaned_data.name }}</p>
+        <p>Probability: {{ probability }}</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
