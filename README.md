@@ -226,14 +226,16 @@ Response:
 
 ---
 
-<!--# 📷 Screenshots (Add your images here)
+# 📷 Screenshots (Add your images here)
 
 ```
 /screenshots/home.png
 /screenshots/predict.png
+/screenshots/predict_entries.png
+/screenshots/predict_result.png
 /screenshots/insights.png
 ```
-
+<!--
 Use this template:
 
 ```
